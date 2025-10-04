@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import LoginPage from './components/LoginPage';
+import LandingPage from './components/LandingPage';
 import Header from './components/Header';
 import MenuPage from './components/MenuPage';
 import CartPage from './components/CartPage';
@@ -8,23 +9,24 @@ import PaymentPage from './components/PaymentPage';
 import ConfirmationPage from './components/ConfirmationPage';
 import { User, CartItem, MenuItem, OrderContributor } from './types';
 
-type Page = 'menu' | 'cart' | 'checkout' | 'payment' | 'confirmation';
+type Page = 'landing' | 'menu' | 'cart' | 'checkout' | 'payment' | 'confirmation';
 
 function App() {
   const [user, setUser] = useState<User | null>(null);
-  const [currentPage, setCurrentPage] = useState<Page>('menu');
+  const [currentPage, setCurrentPage] = useState<Page>('landing');
   const [cart, setCart] = useState<CartItem[]>([]);
   const [contributors, setContributors] = useState<OrderContributor[]>([]);
   const [orderId, setOrderId] = useState<string>('');
 
   const handleLogin = (userData: User) => {
     setUser(userData);
+    setCurrentPage('landing');
   };
 
   const handleLogout = () => {
     setUser(null);
     setCart([]);
-    setCurrentPage('menu');
+    setCurrentPage('landing');
     setContributors([]);
     setOrderId('');
   };
@@ -73,7 +75,7 @@ function App() {
     setCart([]);
     setContributors([]);
     setOrderId('');
-    setCurrentPage('menu');
+    setCurrentPage('landing');
   };
 
   const totalAmount = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
@@ -85,12 +87,19 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {currentPage !== 'confirmation' && (
+      {currentPage !== 'confirmation' && currentPage !== 'landing' && (
         <Header
           user={user}
           cartItemCount={cartItemCount}
           onLogout={handleLogout}
           onCartClick={() => setCurrentPage('cart')}
+        />
+      )}
+
+      {currentPage === 'landing' && (
+        <LandingPage
+          userName={user.name}
+          onStartOrdering={() => setCurrentPage('menu')}
         />
       )}
 

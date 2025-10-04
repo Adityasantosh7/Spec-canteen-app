@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Plus } from 'lucide-react';
+import { Plus, UtensilsCrossed } from 'lucide-react';
 import { MenuItem, CartItem } from '../types';
 import { menuData, categories } from '../menuData';
 
@@ -55,13 +55,19 @@ export default function MenuPage({ cart, onAddToCart }: MenuPageProps) {
               return (
                 <div
                   key={item.id}
-                  className={`bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden animate-slide-up`}
+                  className={`bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden animate-slide-up relative`}
                   style={{ animationDelay: `${index * 50}ms` }}
                 >
-                  <div className="p-6">
-                    <h3 className="text-lg font-bold text-gray-800 mb-2">
-                      {item.name}
-                    </h3>
+                  <div className="absolute top-2 right-2 opacity-10">
+                    <UtensilsCrossed className="w-12 h-12 text-red-600" />
+                  </div>
+                  <div className="p-6 relative">
+                    <div className="flex items-start space-x-2 mb-2">
+                      <span className="text-2xl mt-1">🍽️</span>
+                      <h3 className="text-lg font-bold text-gray-800 flex-1">
+                        {item.name}
+                      </h3>
+                    </div>
                     <div className="flex items-center justify-between">
                       <span className="text-2xl font-bold text-red-600">
                         ₹{item.price}
@@ -74,7 +80,7 @@ export default function MenuPage({ cart, onAddToCart }: MenuPageProps) {
                       </button>
                     </div>
                     {quantity > 0 && (
-                      <div className="mt-3 bg-red-100 text-red-800 text-center py-2 rounded-lg font-semibold">
+                      <div className="mt-3 bg-red-100 text-red-800 text-center py-2 rounded-lg font-semibold animate-scale-pulse">
                         {quantity} in cart
                       </div>
                     )}
