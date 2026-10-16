@@ -1,12 +1,14 @@
 # 🍽️ SPEC Canteen App
 
+[Live Demo](https://bite-order-spicy.lovable.app) — Project website
+
 A digital canteen ordering solution designed to make food ordering more convenient for students and staff at **St. Peter's Engineering College (SPEC)**.
 
-The goal is to simplify the campus canteen experience by making menu browsing and food ordering easier, reducing unnecessary waiting, and creating a smoother experience for students and canteen staff.
+The goal is to simplify the campus canteen experience by making menu browsing and food ordering easier, reducing unnecessary waiting, and creating a smoother experience for students and canteen sta[...]
 
 ## 📌 About the Project
 
-The SPEC Canteen App is a college-focused project that aims to bring the traditional canteen experience online. Instead of relying entirely on manual ordering, students can use a digital interface to interact with the canteen more conveniently.
+The SPEC Canteen App is a college-focused project that aims to bring the traditional canteen experience online. Instead of relying entirely on manual ordering, students can use a digital interface [...]
 
 This project is being developed with a focus on usability, simplicity, and the needs of a college campus.
 
