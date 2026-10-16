@@ -1,26 +1,29 @@
 # 🍽️ SPEC Canteen App
 
-[Live Demo](https://bite-order-spicy.lovable.app) — Project website
+[![Live Demo](https://img.shields.io/badge/Live-Demo-%23FF6B6B?style=flat-square&logo=vercel)](https://bite-order-spicy.lovable.app) [Live Site](https://bite-order-spicy.lovable.app)
 
 A digital canteen ordering solution designed to make food ordering more convenient for students and staff at **St. Peter's Engineering College (SPEC)**.
 
-The goal is to simplify the campus canteen experience by making menu browsing and food ordering easier, reducing unnecessary waiting, and creating a smoother experience for students and canteen sta[...]
+The goal is to simplify the campus canteen experience by making menu browsing and food ordering easier, reducing unnecessary waiting, and creating a smoother experience for students and canteen staff.
 
 ## 📌 About the Project
 
-The SPEC Canteen App is a college-focused project that aims to bring the traditional canteen experience online. Instead of relying entirely on manual ordering, students can use a digital interface [...]
+The SPEC Canteen App is a college-focused project that aims to bring the traditional canteen experience online. Instead of relying entirely on manual ordering, students can use a digital interface to browse the menu, place orders, and track their order status.
 
 This project is being developed with a focus on usability, simplicity, and the needs of a college campus.
 
-## ✨ Key Features
+## ✨ Live Demo / Website
 
-- **Digital Canteen Experience** — A convenient interface for accessing canteen services.
-- **Menu Browsing** — Explore available food items and their details.
-- **Easy Ordering** — Simplify the process of selecting food items and placing orders.
-- **Student-Friendly Design** — Designed with the needs of college students in mind.
-- **Campus-Focused Solution** — Tailored to the canteen experience at SPEC.
+- Project website: https://bite-order-spicy.lovable.app
+- Demo badge (top) links to the live site.
 
-*Note: The features above describe the intended functionality. Update this section to reflect the features currently implemented in the application.*
+(If you'd like this link reflected in the repository "Website" settings in GitHub, you can add it in the repo settings > Pages or put it in the repository description.)
+
+## 📷 Screenshot (placeholder)
+
+[![App Screenshot](screenshots/home.svg)](https://bite-order-spicy.lovable.app)
+
+Add a real screenshot under `screenshots/home.png` or replace `screenshots/home.svg` with a production screenshot. The placeholder above links to the live demo.
 
 ## 🎯 Project Objectives
 
@@ -34,10 +37,12 @@ This project is being developed with a focus on usability, simplicity, and the n
 
 The technologies used in this project depend on the current implementation.
 
-- **Frontend:** Add your frontend framework or technologies here.
+- **Frontend:** Vite + React + TypeScript
 - **Backend:** Add your backend framework or technologies here.
 - **Database:** Add your database here.
 - **Development Tools:** Git and GitHub.
+
+> Note: I added a `homepage` field to package.json pointing to the live demo so some tooling (and GitHub Pages workflows) can reference the site.
 
 ## 🚀 Getting Started
 
@@ -63,30 +68,43 @@ cd speccanteenapp
 
 **3. Install dependencies**
 
-Run the installation command for your project's framework. For example, if the project uses npm:
-
 ```bash
 npm install
 ```
 
 **4. Start the application**
 
-Use the development command configured in your project. For an npm project, this may be:
-
 ```bash
 npm run dev
 ```
 
-The exact installation and startup commands depend on the project's configuration. Check `package.json` or the relevant project files before running these commands.
+## 📦 Deploying to GitHub Pages (optional)
 
-## 📸 Screenshots
+This project uses Vite. To deploy to GitHub Pages you can:
 
-Add screenshots of the application here to showcase the user interface and its functionality.
+1. Add a build script (already present: `npm run build`).
+2. Install `gh-pages` (optional) and add a deploy script, or configure GitHub Actions to build and publish the `dist/` folder to the `gh-pages` branch.
 
-<!-- Example:
-![Home Page](screenshots/home.png)
-![Menu Page](screenshots/menu.png)
--->
+Example using `gh-pages`:
+
+```bash
+npm install --save-dev gh-pages
+```
+
+Add to package.json scripts:
+
+```json
+"predeploy": "npm run build",
+"deploy": "gh-pages -d dist"
+```
+
+Then run:
+
+```bash
+npm run deploy
+```
+
+Alternatively, create a GitHub Actions workflow that builds and publishes the `dist/` folder to the `gh-pages` branch.
 
 ## 🔮 Future Improvements
 
