@@ -1,6 +1,7 @@
 {
   "name": "vite-react-typescript-starter",
   "private": true,
+  "homepage": "https://bite-order-spicy.lovable.app",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
