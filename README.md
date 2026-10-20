@@ -1,14 +1,14 @@
 # 🍽️ SPEC Canteen App
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-%23FF6B6B?style=flat-square&logo=vercel)](https://bite-order-spicy.lovable.app) [Live Site](https://bite-order-spicy.lovable.app)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) [![Live Demo](https://img.shields.io/badge/Live-Demo-%23FF6B6B?style=flat-square&logo=vercel)](https://bite-order-spicy.lovable.app)
 
-A digital canteen ordering solution designed to make food ordering more convenient for students and staff at **St. Peter's Engineering College (SPEC)**.
+A digital canteen ordering solution designed to make food ordering more convenient for students and staff at St. Peter's Engineering College (SPEC).
 
 The goal is to simplify the campus canteen experience by making menu browsing and food ordering easier, reducing unnecessary waiting, and creating a smoother experience for students and canteen staff.
 
 ## 📌 About the Project
 
-The SPEC Canteen App is a college-focused project that aims to bring the traditional canteen experience online. Instead of relying entirely on manual ordering, students can use a digital interface to browse the menu, place orders, and track their order status.
+The SPEC Canteen App is a college-focused project that aims to bring the traditional canteen experience online. Instead of relying entirely on manual ordering, students can use a digital interface to browse the menu, select items, and place orders efficiently.
 
 This project is being developed with a focus on usability, simplicity, and the needs of a college campus.
 
@@ -17,13 +17,11 @@ This project is being developed with a focus on usability, simplicity, and the n
 - Project website: https://bite-order-spicy.lovable.app
 - Demo badge (top) links to the live site.
 
-(If you'd like this link reflected in the repository "Website" settings in GitHub, you can add it in the repo settings > Pages or put it in the repository description.)
-
-## 📷 Screenshot (placeholder)
+## 📷 Screenshot
 
 [![App Screenshot](screenshots/home.svg)](https://bite-order-spicy.lovable.app)
 
-Add a real screenshot under `screenshots/home.png` or replace `screenshots/home.svg` with a production screenshot. The placeholder above links to the live demo.
+Add a real screenshot under `screenshots/home.png` or replace `screenshots/home.svg` with a production screenshot.
 
 ## 🎯 Project Objectives
 
@@ -37,12 +35,12 @@ Add a real screenshot under `screenshots/home.png` or replace `screenshots/home.
 
 The technologies used in this project depend on the current implementation.
 
-- **Frontend:** Vite + React + TypeScript
-- **Backend:** Add your backend framework or technologies here.
-- **Database:** Add your database here.
-- **Development Tools:** Git and GitHub.
+- Frontend: Vite + React + TypeScript
+- Backend: Add your backend framework or technologies here.
+- Database: Add your database here.
+- Development Tools: Git and GitHub.
 
-> Note: I added a `homepage` field to package.json pointing to the live demo so some tooling (and GitHub Pages workflows) can reference the site.
+> Note: A `homepage` field is included in `package.json` and points to the live demo so relevant tooling can reference the site.
 
 ## 🚀 Getting Started
 
@@ -54,25 +52,25 @@ Install the tools required by the project's technology stack.
 
 ### Installation
 
-**1. Clone the repository**
+1. Clone the repository
 
 ```bash
 git clone https://github.com/Adityasantosh7/speccanteenapp.git
 ```
 
-**2. Navigate to the project directory**
+2. Navigate to the project directory
 
 ```bash
 cd speccanteenapp
 ```
 
-**3. Install dependencies**
+3. Install dependencies
 
 ```bash
 npm install
 ```
 
-**4. Start the application**
+4. Start the application
 
 ```bash
 npm run dev
@@ -91,7 +89,7 @@ Example using `gh-pages`:
 npm install --save-dev gh-pages
 ```
 
-Add to package.json scripts:
+Add to `package.json` scripts:
 
 ```json
 "predeploy": "npm run build",
@@ -120,9 +118,9 @@ Potential improvements for the project include:
 
 ## 🎓 Project Context
 
-**Institution:** St. Peter's Engineering College  
-**Department:** Computer Science and Engineering  
-**Project:** SPEC Canteen App
+- Institution: St. Peter's Engineering College
+- Department: Computer Science and Engineering
+- Project: SPEC Canteen App
 
 ## 🤝 Contributions
 
@@ -130,8 +128,8 @@ Suggestions and improvements are welcome. You can fork the repository, create a 
 
 ## 📄 License
 
-No license has been specified yet. Add a `LICENSE` file if you intend to permit others to reuse, modify, or distribute this project.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-**Developed as a campus-focused project for St. Peter's Engineering College.**
+Developed as a campus-focused project for St. Peter's Engineering College.
